@@ -16,7 +16,7 @@
         ]
     },
     "docsets_to_publish": [{
-        "docset_name": "core-docs",
+        "docset_name": "core-docs-optest",
         "build_source_folder": ".",
         "build_output_subfolder": ".",
         "locale": "en-us",
@@ -39,7 +39,10 @@
     "dependent_repositories": [{
         "path_to_root": "_themes",
         "url": "https://github.com/Microsoft/templates.docs.msft",
-        "branch": "master"
+        "branch": "master",
+        "branch_mapping": {
+          "prerelease": "prerelease"
+        }
     }, {
         "path_to_root": "api_ref",
         "url": "https://github.com/docascode/coreapi.git",
