@@ -55,7 +55,7 @@
     }],
 	"dependent_packages": [
     {
-      "id": "memberpage.plugins",
+      "id": "memberpage",
       "nuget_feed": "https://www.myget.org/F/docfx-dev/api/v2",
       "path_to_root": "_dependentPackages/memberpage.plugins",
       "target_framework": "net45",
