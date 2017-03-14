@@ -27,7 +27,8 @@
             "ManagedReference": "Content",
             "RestApi": "Content"
         },
-        "build_entry_point": "docs"
+        "build_entry_point": "docs",
+		"customized_template_paths": ["_dependentPackages/memberpage.plugins/content"]
     }],
     "notification_subscribers": [],
     "Targets": {
