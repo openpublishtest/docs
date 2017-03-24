@@ -86,10 +86,13 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 ## Text styling
 
 *Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
+ Use for files, folders, paths (for long items, split onto their own line), new terms.
 
 **Bold**
 Use for UI elements.
+
+`Code`
+Use for inline code, language keywords, NuGet package names, command-line commands, database table and column names, and URLs that you don't want to be clickable.
 
 ## Links
 
@@ -125,6 +128,7 @@ The build system has some extensions that allow us to link to .NET Core APIs wit
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
+
 1. Markdown link: `[link_text](xref:UID)`
 2. Auto link: `<xref:UID>`
 3. Shorthand form: `@UID`
@@ -301,10 +305,6 @@ function fancyAlert(arg) {
 }
 ```
 
-### Inline code
-
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
-
 ## Blockquotes
 
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
@@ -377,7 +377,7 @@ You can see an example of buttons in action at the [Intune docs](https://docs.mi
 
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/using-on-windows.md)
+- [Windows](../docs/csharp/getting-started/with-visual-studio.md)
 
 You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 

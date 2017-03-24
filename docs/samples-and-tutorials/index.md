@@ -21,7 +21,7 @@ You can find great resources to learn the F# programming language
 on the [F# Foundation's site](http://fsharp.org/learn.html). 
 
 You can find great resources for learning ASP.NET Core on the
-[ASP.NET site](https://docs.asp.net/en/latest/tutorials/index.html).
+[ASP.NET site](https://docs.microsoft.com/aspnet/core/tutorials/).
 
 In addition, if you are interested in exploring C# using an
 online playground, try these [interactive tutorials](http://go.microsoft.com/fwlink/?LinkId=817234).
@@ -90,6 +90,14 @@ This tutorial demonstrates many of the features of LINQ and the language element
 **[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
 
 This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice).
+
+**[Getting started with .NET Core on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs.md)**
+
+This tutorial shows you how to build a simple .NET Core console application using Visual Studio for Mac.
+
+**[Building a complete .NET Core solution on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
+
+This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
 
 ## Deploying to Containers
 

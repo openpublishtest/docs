@@ -1,5 +1,5 @@
 ---
-title: Using .NET Core SDK and tools in Continuous Integration (CI)
+title: Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs
 description: Using .NET Core SDK and tools in Continuous Integration (CI)
 keywords: .NET, .NET Core
 author: blackdwarf
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
+ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 ---
 
 # Using .NET Core SDK and tools in Continuous Integration (CI)
@@ -78,8 +78,7 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed 
-in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed in the build worker image `Visual Studio 2015`.
 
 Just use:
 
@@ -106,4 +105,3 @@ install:
   - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
   # follow normal installation from binaries
 ```
-

@@ -31,7 +31,7 @@ You can see the complete set of .NET runtimes that support the .NET Standard Lib
 | Platform Name | Alias |  |  |  |  |  | | | |
 | :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
 |.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 2.0 |
-|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|vNext|
+|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|2.0|
 |.NET Framework|net|&rarr;|4.5|4.5.1|4.6|4.6.1|4.6.2|vNext|4.6.1|
 |Mono/Xamarin Platforms||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|vNext|
 |Universal Windows Platform|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|&rarr;|&rarr;|vNext|
@@ -63,7 +63,7 @@ The .NET Standard Library spec is a standardized set of APIs. The spec is mainta
 
 The official spec is a set of .cs files that define the APIs that are part of the standard. The [ref directory](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) for each [component](https://github.com/dotnet/corefx/tree/master/src) defines the .NET Standard Library APIs. While the ref artifacts reside in the [CoreFX repo](https://github.com/dotnet/corefx), they are not .NET Core specific.
 
-The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets)) describes the set of libraries that define (in part) one or more .NET Standard Library versions.
+The [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) metapackage ([source](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) describes the set of libraries that define (in part) one or more .NET Standard Library versions.
 
 A given component, like System.Runtime, describes:
 
@@ -106,7 +106,7 @@ The .NET Standard Library is compatible with a subset of PCL profiles. .NET Stan
 
 Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) NuGet package. This dependency is required when referencing NuGet packages that contain profile-based PCLs.
 
-Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs in project.json. `netstandard` packaging is compatible with existing users.
+Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs. `netstandard` packaging is compatible with existing users.
 
 You can see the set of PCL profiles that are compatible with the .NET Standard: 
 

@@ -14,7 +14,7 @@ ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
 
 # C# Tutorials
 
-The following tutorials enable you to build C# programs using [CoreCLR](https://github.com/dotnet/coreclr):
+The following tutorials enable you to build C# programs using [.NET Core](../../core/index.md):
 
 * [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and
 the basics of the Task based asynchronous programming model.
@@ -30,3 +30,5 @@ features in the C# language.
 * [Inheritance](inheritance.md): demonstrates how class and interface inheritance provide code reuse in C#.
 
 * [String Interpolation](string-interpolation.md): demonstrates many of the uses for the `$` string interpolation in C#.
+
+* [Using Attributes](attributes.md): how to create and use attributes in C#.

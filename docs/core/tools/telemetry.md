@@ -1,15 +1,15 @@
 ---
-title: .NET Core Tools Telemetry
+title: .NET Core Tools Telemetry | Microsoft Docs
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-ms.date: 07/06/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: f2b312bb-f80b-4b0d-9101-93908f06a6fa
+ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
 ---
 
 # .NET Core Tools Telemetry
@@ -34,11 +34,11 @@ The `dotnet` command is used to launch both apps and the .NET Core Tools. The `d
 - `dotnet restore`
 - `dotnet run`
 
-##Behavior
+## Behavior
 
 The .NET Core Tools telemetry feature is enabled by default. You can opt-out of the telemetry feature by setting an environment variable DOTNET_CLI_TELEMETRY_OPTOUT (for example, `export` on macOS/Linux, `set` on Windows) to true (for example, “true”, 1).
 
-##Data Points
+## Data Points
 
 The feature collects the following pieces of data:
 
@@ -52,7 +52,7 @@ The feature collects the following pieces of data:
 
 The feature will not collect any personal data, such as usernames or emails. It will not scan your code and not extract any project-level data that can be considered sensitive, such as name, repo or author (if you set those in your project.json). We want to know how the tools are used, not what you are building with the tools. If you find sensitive data being collected, that’s a bug. Please [file an issue](https://github.com/dotnet/cli/issues) and it will be fixed.
 
-##License
+## License
 
 The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIBRARY EULA](https://aka.ms/dotnet-core-eula). This includes the “DATA” section re-printed below, to enable telemetry.
 
@@ -74,27 +74,21 @@ The .NET Core Tools display the following text when you first run one of the com
 ```text
 Welcome to .NET Core!
 ---------------------
-
-Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to 
 see available commands or go to https://aka.ms/dotnet-cli-docs.
 
 Telemetry
----------
-
-The .NET Core tools collect usage data in order to improve your experience.
-The data is anonymous and does not include commandline arguments. The data is
+--------------
+The .NET Core tools collect usage data in order to improve your experience. 
+The data is anonymous and does not include command-line arguments. The data is 
 collected by Microsoft and shared with the community.
-
-You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT 
 environment variable to 1 using your favorite shell.
-
-You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-
-telemetry.
+You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
 
 Configuring...
---------------
-
-A command is running to initially populate your local package cache, to
-improve restore speed and enable offline access. This command will take up to
+-------------------
+A command is running to initially populate your local package cache, to 
+improve restore speed and enable offline access. This command will take up to 
 a minute to complete and will only happen once. 
 ```

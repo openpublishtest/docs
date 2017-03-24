@@ -218,7 +218,10 @@ You can set up a button that you can use to cancel an async application if you d
   
 4.  Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.  
   
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
+    ```vb  
+    Async Function AccessTheWebAsync(ct As CancellationToken) As Task  
+    ```  
+  
      Call the method from `startButton_Click` by using a statement instead of an expression.  
   
     ```vb  
@@ -470,6 +473,6 @@ End Class
 ## See Also  
  <xref:System.Threading.CancellationTokenSource>   
  <xref:System.Threading.CancellationToken>   
- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md)   
+ [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)   
  [Fine-Tuning Your Async Application (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)   
  [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046)
